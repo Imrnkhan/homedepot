@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <style>
+        .myaccount-form{
+    position: absolute;
+    width: 315px;
+    height: 380px;
+    background-color: white;
+    right: 98px;
+    top:60px;
+    margin-top: 2%;
+    border-radius: 3px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: none;
+   
+    
+}
+.box1{
+    width: 300px;
+    height: 90%;
+    border: 1px solid white;
+    margin-left: 2%;
+    margin-top: 2%;
+}
+
+.button1{
+    color: white;
+   width: 285px;
+   height: 34px;
+   font-size: 1.8rem;
+   background-color: #F96302;
+   margin-top: 4%;
+   font-family: "helvetica-neue-bold",Helvetica Neue,Helvetica,Arial,sans-serif;
+   text-decoration: none;
+   text-align: center;
+   cursor: pointer;
+   line-height: 1em;
+   box-sizing: content-box;
+   margin-bottom: 3px;
+   box-shadow: 0 3px 0 #c14c00;
+   border: 1px solid orangered;
+   
+
+   }
+   .button2{
+    color: orangered;
+   width: 285px;
+   height: 34px;
+   font-size: 1.8rem;
+   background-color: white;
+   border: none;
+ 
+   font-family: "helvetica-neue-bold",Helvetica Neue,Helvetica,Arial,sans-serif;
+   text-decoration: none;
+   text-align: center;
+   cursor: pointer;
+   line-height: 1em;
+   box-sizing: content-box;
+   margin-bottom: 3px;
+   border: 1px solid orangered;
+   
+
+}  
+.arrow-up{
+    position: absolute;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-bottom: 12px solid hsl(0, 18%, 88%);
+    right: 280px;
+    top: 75px;
+    display: none;
+    
+    
+}
+    </style>
+</head>
+<body>
+    <div><a style="color: black;text-decoration: none;" href="" id="myaccount">My Account</a></div>
+    <div class="arrow-up"></div>
+      <div class="myaccount-form">
+          <div class="box1">
+              
+              <button class="button1">Sign In</button>
+              <p></p>
+              <button class="button2">Register</button>
+          </div>
+
+      </div>
+</body>
+</html>
+<script src="https://kit.fontawesome.com/e5ccb9f482.js" crossorigin="anonymous"></script>
+     <script type="text/javascript">
+        $(document).ready(function(){
+           var arrow=$(".arrow-up");
+            var form=$(".myaccount-form");
+            var status=false;
+            $("#myaccount").click(function(event){
+                event.preventDefault();
+                if(status== false){
+                   arrow.fadeIn();
+                    form.fadeIn();
+                    status=true;
+                }
+                else{
+                    arrow.fadeOut();
+                    form.fadeOut();
+                    status=false;
+                }
+            })
+        })
+
+</script>
