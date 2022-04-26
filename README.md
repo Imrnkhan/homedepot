@@ -1,0 +1,1 @@
+<h3> The Home Depot, Inc., commonly known as Home Depot, is the largest home improvement retailer in the United States, supplying tools, construction products, appliances, and services. The company is headquartered in incorporated Cobb County, Georgia, with an Atlanta mailing address.<h3>
